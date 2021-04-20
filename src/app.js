@@ -86,7 +86,7 @@ function showWeather(response) {
   wind.innerHTML=`Wind ${windSpeed}km/h`;
 
 }
-showCity("sydney");
+showCity("arrecife");
 
 //get current location- handle click button
 function getCurrentLocation(event) {
