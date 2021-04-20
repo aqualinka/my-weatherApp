@@ -64,4 +64,16 @@
     background: rgba(238, 160, 173, 0.5);
     border: 1px solid white;
   }
-  
+  #project-links{
+    font-size: smaller;
+    text-align: center;
+    padding-top: 10px;
+  }
+  #project-links > a {
+    color: rgb(6, 6, 192);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #project-links > a:hover{
+    text-decoration: underline;
+  }
