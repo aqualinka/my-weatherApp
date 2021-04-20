@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search engine</title>
+    <script
+      src="https://kit.fontawesome.com/b9264e5c9d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+  <body>
+    <div class="container container-custom p-4">
+      <form id="search-form">
+        <div class="row">
+          <div class="col-6">
+            <input
+              autofocus="on"
+              id="search-input"
+              type="search"
+              class="form-control"
+              placeholder="enter a city"
+            />
+          </div>
+          <div class="col-3">
+            <button type="submit" class="btn button-custom">search</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn button-current">current</button>
+          </div>
+        </div>  
+      </form>
+      
+
+      <div class="row pt-2">
+        <div class="col">
+          <h1>
+            <span id="city-heading">
+                &nbsp;
+            </span>
+
+            <i class="fas fa-sun img-heading p-2"></i>
+          </h1>
+          <p>
+            <strong id="currentDay">&nbsp;</strong>
+            <span id="currentDate">
+                &nbsp;
+            </span>
+            <br />
+            <span id="currentTime">
+                &nbsp;
+            </span>
+          </p>
+        </div>
+
+        <div class="col">
+          Temperature
+            <br />
+            <span id="temperature"> &nbsp;</span>
+            <a href="#" id="celsius">ºC</a>
+            
+            <br />
+            <span id="weatherLike">
+                &nbsp;
+            </span> 
+            <br />
+            <span id="humidity">
+                &nbsp;
+            </span>
+            <br />
+           <span id="wind-speed">
+                &nbsp;
+            </span> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card card-custom">
+            <div class="card-body">
+              <i class="fas fa-sun img-custom"></i>
+              <p class="card-text">
+                sunday
+                <br />
+                30ºC
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-custom">
+            <div class="card-body">
+              <i class="fas fa-cloud-sun img-custom"></i>
+              <p class="card-text">
+                monday
+                <br />
+                29ºC
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-custom">
+            <div class="card-body">
+              <i class="fas fa-sun img-custom"></i>
+              <p class="card-text">
+                tuesday
+                <br />
+                29ºC
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-custom">
+            <div class="card-body">
+              <i class="fas fa-sun img-custom"></i>
+              <p class="card-text">
+                wednesday
+                <br />
+                30ºC
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-custom">
+            <div class="card-body">
+              <i class="fas fa-cloud-sun img-custom"></i>
+              <p class="card-text">
+                thursday
+                <br />
+                27ºC
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
